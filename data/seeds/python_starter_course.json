@@ -1,0 +1,1319 @@
+{
+  "title": "Python: стартовый курс",
+  "slug": "python-starter",
+  "description": "Стартовый курс Python для начинающих. 24 урока с теорией, практикой и проектами.",
+  "language": "python",
+  "level": "beginner",
+  "status": "published",
+  "visibility": "public",
+  "settings_json": {
+    "unlock_mode": "sequential"
+  },
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Урок 1. print и первая программа",
+      "slug": "lesson-1",
+      "goal": "Научиться выводить текст с помощью print.",
+      "theory": "Программа на Python — это набор команд, которые компьютер выполняет по порядку.\nСамая простая команда — print(). Она выводит текст на экран.\n\nПример:\nprint(\"Привет, мир!\")\nprint(2 + 2)\n\nТекст в кавычках называется строкой. Числа пишут без кавычек.\nКаждая команда обычно пишется с новой строки.\n{ student_name }, попробуй изменить текст внутри print и посмотри, что изменится.",
+      "simple_explanation": "print — это как кнопка «показать на экране». Ты пишешь, что показать, и Python это выводит. Так программа «разговаривает» с человеком.",
+      "practice": "1. Запусти стартовый код и убедись, что на экране появился текст.\n2. Измени сообщение в print на своё.\n3. Добавь ещё одну строку print с любым текстом.\n4. Сдай задание «Моя первая программа»: программа должна спросить имя и поздороваться.",
+      "mini_project": "Сделай «визитку»: три строки print — твоё имя, любимая игра и сколько тебе лет.",
+      "summary": "{ student_name }, ты научился выводить текст с помощью print. Это основа почти любой программы — показывать результат пользователю.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "print(\"Привет, {{ student_name }}!\")\n",
+          "checker_type": "stdout_regex",
+          "expected_output": ".+",
+          "max_xp": 3,
+          "sort_order": 1,
+          "is_required": false
+        },
+        {
+          "title": "Моя первая программа",
+          "description": "Напиши программу, которая спрашивает твоё имя и выводит приветствие от первого лица.",
+          "type": "practice",
+          "starter_code": "student_name = input(\"Как тебя зовут? \")\n# Выведи: Привет! Я {student_name}!\n",
+          "checker_type": "stdin_stdout",
+          "visible_tests_json": [
+            {
+              "stdin": "Гоша",
+              "expected_stdout": "Привет! Я Гоша!"
+            },
+            {
+              "stdin": "Аня",
+              "expected_stdout": "Привет! Я Аня!"
+            }
+          ],
+          "max_xp": 5,
+          "sort_order": 2,
+          "slug": "print_hello",
+          "checker_config_json": {},
+          "hidden_tests_json": [
+            {
+              "stdin": "Тест",
+              "expected_stdout": "Привет! Я Тест!",
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Урок 2. Переменные",
+      "slug": "lesson-2",
+      "goal": "Понять, что такое переменные.",
+      "theory": "Переменная — это «коробочка» с названием, в которой хранится значение.\n\nname = \"Гоша\"\nage = 10\nscore = 0\n\nСлева — имя переменной, справа — значение. Знак = означает «положить в коробочку».\nИмя переменной лучше выбирать понятное: name, score, health.\nЗначение можно менять: score = score + 5",
+      "simple_explanation": "Переменная — как наклейка на коробке. Ты пишешь, что внутри, и потом можешь использовать имя коробки вместо того, чтобы помнить число или текст.",
+      "practice": "1. Запусти пример с переменной name.\n2. Создай переменные для имени героя, здоровья и уровня.\n3. Выведи их через print.\n4. В проекте «Профиль игрока» собери мини-карточку персонажа.",
+      "mini_project": "Придумай персонажа игры: имя, класс (воин/маг), здоровье. Выведи всё красиво в 3–4 строки.",
+      "summary": "Теперь ты умеешь сохранять данные в переменных, { student_name }. Без них сложно делать игры и программы с памятью.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "name = \"{{ student_name }}\"\nprint(name)\n",
+          "checker_type": "stdout_regex",
+          "expected_output": ".+",
+          "max_xp": 3,
+          "sort_order": 1,
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 2",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "project",
+          "starter_code": "name = \"{{ student_name }}\"\n# Выведи имя через print\n",
+          "checker_type": "stdout_exact",
+          "expected_output": "{{ student_name }}",
+          "max_xp": 5,
+          "sort_order": 2,
+          "slug": "game_profile",
+          "expected_stdout": "{{ student_name }}",
+          "checker_config_json": {}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Урок 3. Строки и f-строки",
+      "slug": "lesson-3",
+      "goal": "Работать со строками и f-строками.",
+      "theory": "Строка — текст в кавычках: \"Привет\" или 'Привет'.\nf-строка позволяет вставить переменную прямо в текст:\n\nname = \"Гоша\"\nprint(f\"Привет, {name}!\")\n\nБуква f перед кавычками включает подстановку. В фигурных скобках — имя переменной.\nМожно соединять строки: \"Уровень \" + str(level)",
+      "simple_explanation": "f-строка — шаблон с дырочками. Ты пишешь предложение и вставляешь переменные в {скобки}, чтобы не склеивать кусочки вручную.",
+      "practice": "1. Запусти пример с f-строкой.\n2. Сделай приветствие с твоим именем из переменной.\n3. Выведи фразу вида: «У героя 100 здоровья и 5 золота».\n4. Сдай задание урока с правильным форматом вывода.",
+      "mini_project": "Сделай «объявление квеста»: название, награда и уровень сложности — всё через f-строку.",
+      "summary": "{ student_name }, f-строки делают текст в программе живым и удобным. Ты будешь использовать их в каждом следующем уроке.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "name = \"{{ student_name }}\"\nprint(f\"Меня зовут {name}\")\n",
+          "checker_type": "stdout_regex",
+          "expected_output": ".+",
+          "max_xp": 3,
+          "sort_order": 1,
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 3",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "practice",
+          "starter_code": "name = \"{{ student_name }}\"\n# Выведи фразу через f-строку: Меня зовут ...\n",
+          "checker_type": "stdout_exact",
+          "expected_output": "Меня зовут {{ student_name }}",
+          "max_xp": 5,
+          "sort_order": 2,
+          "expected_stdout": "Меня зовут {{ student_name }}",
+          "checker_config_json": {}
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Урок 4. input",
+      "slug": "lesson-4",
+      "goal": "Получать данные от пользователя.",
+      "theory": "input() — команда, которая ждёт, пока пользователь что-то введёт с клавиатуры.\n\nname = input(\"Как тебя зовут? \")\nprint(f\"Привет, {name}!\")\n\nВсё, что вводит пользователь, приходит как строка (текст).\nЕсли нужно число — используй int(): age = int(input(\"Сколько тебе лет? \"))",
+      "simple_explanation": "input — это вопрос программы. Python останавливается, ты печатаешь ответ и нажимаешь Enter. Ответ сохраняется в переменную.",
+      "practice": "1. Запусти пример с input — отвечай на строке > в терминале.\n2. В задании «Любимый цвет» сделай два вопроса (имя и цвет) — для каждого input() нужен свой ответ.\n3. Спроси два числа и выведи сумму (int) — это для тренировки в терминале, не для сдачи основного задания.\n4. Сдай «Задание урока 4»: там только один input() с именем. Лишний input() на сдаче даст ошибку «Не хватает данных для ввода».",
+      "mini_project": "Мини-диалог на ручную проверку: спроси имя и любимую игру, выведи «{имя} любит играть в {игра}». Преподаватель примет или отклонит решение.",
+      "summary": "Программа теперь умеет спрашивать, { student_name }. input + print — основа интерактивных игр.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "name = input(\"Как тебя зовут? \")\nprint(f\"Привет, {name}!\")\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 3,
+          "sort_order": 1,
+          "checker_config_json": {},
+          "visible_tests_json": [
+            {
+              "stdin": "Гоша",
+              "expected_stdout": "Привет, Гоша!"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "Маша",
+              "expected_stdout": "Привет, Маша!",
+              "hidden": true
+            }
+          ],
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 4",
+          "description": "Спроси имя через один input() и выведи «Привет, {имя}!». Не добавляй второй input() — автотесты дают только одну строку ввода.",
+          "type": "practice",
+          "starter_code": "name = input(\"Как тебя зовут? \")\n# Выведи: Привет, {name}!\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 5,
+          "sort_order": 2,
+          "slug": "lesson-4-name",
+          "checker_config_json": {},
+          "visible_tests_json": [
+            {
+              "stdin": "Гоша",
+              "expected_stdout": "Привет, Гоша!"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "Петя",
+              "expected_stdout": "Привет, Петя!",
+              "hidden": true
+            }
+          ]
+        },
+        {
+          "title": "Любимый цвет",
+          "description": "Спроси имя и любимый цвет (два input()). Выведи «{имя} любит цвет {цвет}». Отвечай на каждый вопрос отдельно на строке >.",
+          "type": "practice",
+          "starter_code": "name = input()\ncolor = input()\n# Выведи: {name} любит {color}\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 3,
+          "sort_order": 3,
+          "slug": "lesson-4-favorite-color",
+          "is_required": false,
+          "checker_config_json": {},
+          "visible_tests_json": [
+            {
+              "stdin": "Гоша\nсиний",
+              "expected_stdout": "Гоша любит цвет синий"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "Аня\nзелёный",
+              "expected_stdout": "Аня любит цвет зелёный",
+              "hidden": true
+            }
+          ]
+        },
+        {
+          "title": "Мини-диалог",
+          "description": "Спроси имя и любимую игру, выведи «{имя} любит играть в {игра}». Решение проверит преподаватель.",
+          "type": "project",
+          "starter_code": "name = input(\"Как тебя зовут? \")\ngame = input(\"Какая твоя любимая игра? \")\nprint(f\"{name} любит играть в {game}\")\n",
+          "checker_type": "manual",
+          "max_xp": 5,
+          "sort_order": 4,
+          "slug": "lesson-4-mini-dialog",
+          "is_required": false,
+          "checker_config_json": {},
+          "visible_tests_json": [],
+          "hidden_tests_json": []
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Урок 5. Числа и int",
+      "slug": "lesson-5",
+      "goal": "Работать с числами.",
+      "theory": "Числа в Python бывают целые (int) и дробные (float).\nint() превращает строку в целое число:\n\na = int(input(\"Число: \"))\nb = int(input(\"Ещё число: \"))\nprint(a + b)\n\nОперации: + − * /. Целочисленное деление: //, остаток: %.\nБез int() input вернёт текст, и сложение не сработает как надо.",
+      "simple_explanation": "Компьютер различает текст \"5\" и число 5. int() говорит: «это число, а не буквы». Тогда можно считать очки, здоровье и монеты.",
+      "practice": "1. Сложи два числа из input.\n2. Посчитай очки: начальные 0 + бонус из ввода.\n3. Сделай «калькулятор очков» из задания урока.\n4. Проверь, что при вводе букв программа не падает (пока можно не обрабатывать).",
+      "mini_project": "Калькулятор урона: базовый урон + бонус от оружия (два числа с клавиатуры).",
+      "summary": "{ student_name }, ты умеешь работать с числами и превращать ввод в int. Это нужно для счёта, урона и очков в играх.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "age = int(input(\"Сколько тебе лет? \"))\nprint(age + 1)\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 3,
+          "sort_order": 1,
+          "checker_config_json": {},
+          "visible_tests_json": [
+            {
+              "stdin": "10",
+              "expected_stdout": "11"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "0",
+              "expected_stdout": "1",
+              "hidden": true
+            }
+          ],
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 5",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "project",
+          "starter_code": "age = int(input(\"Сколько тебе лет? \"))\n# Выведи age + 1\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 5,
+          "sort_order": 2,
+          "slug": "points_calculator",
+          "checker_config_json": {},
+          "visible_tests_json": [
+            {
+              "stdin": "10",
+              "expected_stdout": "11"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "5",
+              "expected_stdout": "6",
+              "hidden": true
+            },
+            {
+              "stdin": "100",
+              "expected_stdout": "101",
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Урок 6. if и else",
+      "slug": "lesson-6",
+      "goal": "Делать выбор в программе.",
+      "theory": "if позволяет выполнять код только при условии:\n\nhealth = 30\nif health < 50:\n    print(\"Мало здоровья!\")\nelse:\n    print(\"Всё в порядке\")\n\nПосле if и else ставится двоеточие. Код внутри сдвигается вправо (отступ 4 пробела).\nСравнения: == равно, != не равно, < > <= >=",
+      "simple_explanation": "if — это «если». Если условие правда — делаем одно, иначе (else) — другое. Как в игре: если HP мало — пьём зелье.",
+      "practice": "1. Измени health и посмотри, какая ветка сработает.\n2. Спроси число и скажи, больше ли оно 10.\n3. Сделай проверку пароля или секретного слова.\n4. Сдай задание с if/else.",
+      "mini_project": "Проверка входа в подземелье: если уровень >= 5 — пускаем, иначе «Слишком слаб».",
+      "summary": "Условия if/else — мозг программы, { student_name }. Без них игра не может реагировать на ситуацию.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "n = int(input())\nif n > 0:\n    print(\"положительное\")\nelse:\n    print(\"не положительное\")\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 3,
+          "sort_order": 1,
+          "checker_config_json": {},
+          "visible_tests_json": [
+            {
+              "stdin": "5",
+              "expected_stdout": "положительное"
+            },
+            {
+              "stdin": "-1",
+              "expected_stdout": "не положительное"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "0",
+              "expected_stdout": "не положительное",
+              "hidden": true
+            }
+          ],
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 6",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "practice",
+          "starter_code": "n = int(input())\n# Допиши проверку: положительное / не положительное\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 5,
+          "sort_order": 2,
+          "checker_config_json": {
+            "required_constructs": [
+              "if"
+            ]
+          },
+          "visible_tests_json": [
+            {
+              "stdin": "5",
+              "expected_stdout": "положительное"
+            },
+            {
+              "stdin": "-1",
+              "expected_stdout": "не положительное"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "0",
+              "expected_stdout": "не положительное",
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Урок 7. elif, and, or",
+      "slug": "lesson-7",
+      "goal": "Сложные условия.",
+      "theory": "elif — ещё одно условие между if и else:\n\nscore = 75\nif score >= 90:\n    print(\"Отлично\")\nelif score >= 70:\n    print(\"Хорошо\")\nelse:\n    print(\"Нужно подтянуть\")\n\nand — оба условия правдивы. or — хотя бы одно:\nif age >= 10 and has_ticket:\n    print(\"Проходи\")",
+      "simple_explanation": "elif — «а иначе если». and — «и то, и другое». or — «хотя бы что-то одно». Так программа выбирает из нескольких вариантов.",
+      "practice": "1. Сделай оценку по баллам с if/elif/else.\n2. Проверь: число от 1 до 10 с and.\n3. Используй or: ответ «да» или «yes» считается согласием.\n4. Выполни задание урока.",
+      "mini_project": "Выбор сложности: easy/medium/hard — разный текст и «награда» для каждого.",
+      "summary": "{ student_name }, ты умеешь строить цепочки решений. Это основа меню, уровней сложности и диалогов.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "x = int(input())\nif x > 10:\n    print(\"большое\")\nelif x > 0:\n    print(\"маленькое\")\nelse:\n    print(\"отрицательное\")\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 3,
+          "sort_order": 1,
+          "checker_config_json": {},
+          "visible_tests_json": [
+            {
+              "stdin": "15",
+              "expected_stdout": "большое"
+            },
+            {
+              "stdin": "5",
+              "expected_stdout": "маленькое"
+            },
+            {
+              "stdin": "-3",
+              "expected_stdout": "отрицательное"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "0",
+              "expected_stdout": "отрицательное",
+              "hidden": true
+            }
+          ],
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 7",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "practice",
+          "starter_code": "x = int(input())\n# Допиши if/elif/else: большое / маленькое / отрицательное\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 5,
+          "sort_order": 2,
+          "checker_config_json": {
+            "required_constructs": [
+              "if"
+            ]
+          },
+          "visible_tests_json": [
+            {
+              "stdin": "15",
+              "expected_stdout": "большое"
+            },
+            {
+              "stdin": "5",
+              "expected_stdout": "маленькое"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "-1",
+              "expected_stdout": "отрицательное",
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Урок 8. random",
+      "slug": "lesson-8",
+      "goal": "Использовать случайные числа.",
+      "theory": "Модуль random даёт случайные числа:\n\nimport random\ndice = random.randint(1, 6)  # от 1 до 6 включительно\nprint(dice)\n\nrandom.choice([\"орёл\", \"решка\"]) — случайный элемент списка.\nСлучайность нужна для игр: бросок кубика, урон, появление врага.",
+      "simple_explanation": "random — волшебная коробка с сюрпризами. Ты просишь число от 1 до 6 — и каждый раз может выпасть разное. Так игры становятся интереснее.",
+      "practice": "1. Импортируй random и выведи число от 1 до 10.\n2. Симулируй бросок монеты.\n3. Сделай «случайный вызов» из задания.\n4. Попробуй choice из списка имён врагов.",
+      "mini_project": "Генератор лута: случайное число золота от 1 до 20 и случайный предмет из списка.",
+      "summary": "Случайность оживляет игры, { student_name }. random.randint и random.choice — твои главные инструменты.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "import random\nprint(random.randint(1, 10))\n",
+          "checker_type": "stdout_regex",
+          "expected_output": ".+",
+          "max_xp": 3,
+          "sort_order": 1,
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 8",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "challenge",
+          "starter_code": "import random\n# Сгенерируй число от 1 до 10 через random.randint и выведи его\n",
+          "checker_type": "stdout_regex",
+          "expected_output": "^(10|[1-9])\\s*$",
+          "max_xp": 5,
+          "sort_order": 2,
+          "slug": "random_challenge",
+          "checker_config_json": {
+            "pattern": "^(10|[1-9])\\s*$",
+            "required_constructs": [
+              "random",
+              "print"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Урок 9. while",
+      "slug": "lesson-9",
+      "goal": "Повторять действия в цикле.",
+      "theory": "Цикл while повторяет код, пока условие истинно:\n\ncount = 0\nwhile count < 3:\n    print(\"Шаг\", count)\n    count = count + 1\n\nВажно менять переменную внутри цикла, иначе цикл будет бесконечным.\nbreak — выйти из цикла досрочно. continue — перейти к следующей итерации.",
+      "simple_explanation": "while — «делай снова, пока…». Как «бей врага, пока у него есть HP». Когда условие становится ложным — цикл останавливается.",
+      "practice": "1. Выведи числа от 1 до 5 в while.\n2. Спросив число, считай в обратную сторону до 0.\n3. Сделай цикл «у врага 3 жизни — отнимай по одной».\n4. Сдай задание урока.",
+      "mini_project": "Тренировка: 5 раундов, в каждом случайный урон — выводи номер раунда и урон.",
+      "summary": "{ student_name }, цикл while — повторение действий. Им пользуются почти все игровые циклы.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "i = 1\nwhile i <= 3:\n    print(i)\n    i += 1\n",
+          "checker_type": "stdout_regex",
+          "expected_output": ".+",
+          "max_xp": 3,
+          "sort_order": 1,
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 9",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "practice",
+          "starter_code": "i = 1\n# Напиши цикл while: пока i <= 3 — выведи i и увеличь счётчик\n",
+          "checker_type": "stdout_exact",
+          "expected_output": "1\n2\n3",
+          "max_xp": 5,
+          "sort_order": 2,
+          "expected_stdout": "1\n2\n3",
+          "stdin": "",
+          "checker_config_json": {
+            "required_constructs": [
+              "while"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Урок 10. Игра «Угадай число»",
+      "slug": "lesson-10",
+      "goal": "Создать простую игру.",
+      "theory": "Игра «Угадай число» объединяет input, int, if и while:\n\nsecret = random.randint(1, 10)\nguess = int(input(\"Угадай: \"))\nif guess == secret:\n    print(\"Верно!\")\nelif guess < secret:\n    print(\"Больше\")\nelse:\n    print(\"Меньше\")\n\nМожно дать несколько попыток в цикле while.",
+      "simple_explanation": "Компьютер загадывает число, ты угадываешь. Программа подсказывает «больше» или «меньше». Это маленькая, но настоящая игра из всего, что ты уже знаешь.",
+      "practice": "1. Запусти базовый пример угадывания.\n2. Добавь подсказки «больше/меньше».\n3. Ограничь число попыток (например, 5).\n4. Сдай задание guess_number_basic.",
+      "mini_project": "Расширь игру: счётчик попыток и сообщение «Ты победил за N попыток».",
+      "summary": "Ты собрал первую полноценную игру, { student_name }! Угадай число — классический проект начинающего программиста.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код: введи число на строке > и посмотри, угадал ли ты (secret=3).",
+          "type": "practice",
+          "starter_code": "secret = 3  # фиксировано для автопроверки\nguess = int(input())\nprint(guess == secret)\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 3,
+          "sort_order": 1,
+          "slug": "lesson-10-example",
+          "is_required": false,
+          "checker_config_json": {},
+          "visible_tests_json": [
+            {
+              "stdin": "3",
+              "expected_stdout": "True"
+            },
+            {
+              "stdin": "1",
+              "expected_stdout": "False"
+            }
+          ],
+          "hidden_tests_json": []
+        },
+        {
+          "title": "Задание урока 10",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "project",
+          "starter_code": "secret = 7  # фиксировано для автопроверки\nguess = int(input())\n# Допиши подсказки: Верно! / Больше / Меньше\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 5,
+          "sort_order": 2,
+          "slug": "guess_number_basic",
+          "checker_config_json": {
+            "required_constructs": [
+              "if"
+            ]
+          },
+          "visible_tests_json": [
+            {
+              "stdin": "7",
+              "expected_stdout": "Верно!"
+            },
+            {
+              "stdin": "3",
+              "expected_stdout": "Больше"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "10",
+              "expected_stdout": "Меньше",
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Урок 11. Списки",
+      "slug": "lesson-11",
+      "goal": "Хранить несколько значений.",
+      "theory": "Список (list) хранит несколько значений в одной переменной:\n\nitems = [\"меч\", \"щит\", \"зелье\"]\nprint(items[0])  # первый элемент, нумерация с 0\nprint(len(items))  # длина списка\n\nСписок можно менять: items[1] = \"лук\"",
+      "simple_explanation": "Список — рюкзак с ячейками. В каждой ячейке предмет. Номера ячеек начинаются с 0: первая вещь — items[0].",
+      "practice": "1. Создай список из трёх предметов и выведи каждый.\n2. Выведи первый и последний элемент.\n3. Сделай «рюкзак» из задания backpack_basic.\n4. Измени один элемент списка.",
+      "mini_project": "Инвентарь героя: 5 предметов, выведи «В рюкзаке N предметов» и список через цикл.",
+      "summary": "Списки хранят коллекции — предметы, враги, уровни, { student_name }. Они нужны в каждой игре посложнее.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "items = [\"яблоко\", \"банан\"]\nprint(items[0])\n",
+          "checker_type": "stdout_regex",
+          "expected_output": ".+",
+          "max_xp": 3,
+          "sort_order": 1,
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 11",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "project",
+          "starter_code": "items = [\"яблоко\", \"банан\"]\n# Выведи первый элемент списка\n",
+          "checker_type": "stdout_exact",
+          "expected_output": "яблоко",
+          "max_xp": 5,
+          "sort_order": 2,
+          "slug": "backpack_basic",
+          "expected_stdout": "яблоко",
+          "checker_config_json": {
+            "required_any": [
+              [
+                "print"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Урок 12. append, remove, in",
+      "slug": "lesson-12",
+      "goal": "Изменять списки.",
+      "theory": "Методы списка:\ninventory.append(\"ключ\")  # добавить в конец\ninventory.remove(\"меч\")   # удалить по значению\n\"меч\" in inventory          # есть ли элемент\n\nappend удобен при подборе лута. in проверяет наличие предмета для квеста.",
+      "simple_explanation": "append — положить в рюкзак. remove — выбросить. in — спросить «есть ли у меня ключ?». Так инвентарь в игре растёт и меняется.",
+      "practice": "1. Добавь три предмета через append.\n2. Удали один через remove.\n3. Проверь if \"зелье\" in items.\n4. Выполни задание урока с инвентарём.",
+      "mini_project": "Квест: если в инвентаре есть «ключ», открывается дверь, иначе «Нужен ключ».",
+      "summary": "{ student_name }, ты управляешь списком: добавляешь, удаляешь, проверяешь. Это основа инвентаря и коллекций.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "items = []\nitems.append(\"кот\")\nprint(\"кот\" in items)\n",
+          "checker_type": "stdout_regex",
+          "expected_output": ".+",
+          "max_xp": 3,
+          "sort_order": 1,
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 12",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "practice",
+          "starter_code": "items = []\n# Добавь \"кот\" в список и проверь, что он там есть (print True/False)\n",
+          "checker_type": "stdout_exact",
+          "expected_output": "True",
+          "max_xp": 5,
+          "sort_order": 2,
+          "expected_stdout": "True",
+          "checker_config_json": {
+            "required_constructs": [
+              "append"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Урок 13. for",
+      "slug": "lesson-13",
+      "goal": "Перебирать элементы.",
+      "theory": "Цикл for перебирает элементы списка:\n\nmonsters = [\"гоблин\", \"орк\", \"дракон\"]\nfor m in monsters:\n    print(\"Враг:\", m)\n\nfor i in range(5):  # числа 0,1,2,3,4\n    print(i)\n\nfor удобнее, когда знаешь список или количество шагов.",
+      "simple_explanation": "for — «для каждого в списке сделай…». Не нужно самому считать индексы — Python сам перебирает элементы по очереди.",
+      "practice": "1. Выведи все элементы списка в for.\n2. Используй range(3) для трёх раундов боя.\n3. Сделай каталог монстров из задания.\n4. Посчитай сумму чисел в списке через for.",
+      "mini_project": "Таблица урона: список врагов, для каждого выведи случайный урон от 1 до 6.",
+      "summary": "Цикл for — лучший способ пройти по списку, { student_name }. С ним проще писать каталоги, меню и волны врагов.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "for i in range(3):\n    print(i)\n",
+          "checker_type": "stdout_regex",
+          "expected_output": ".+",
+          "max_xp": 3,
+          "sort_order": 1,
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 13",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "project",
+          "starter_code": "# Выведи 0, 1, 2 через for и range\n",
+          "checker_type": "stdout_exact",
+          "expected_output": "0\n1\n2",
+          "max_xp": 5,
+          "sort_order": 2,
+          "slug": "monster_catalog",
+          "expected_stdout": "0\n1\n2",
+          "checker_config_json": {
+            "required_any": [
+              [
+                "for",
+                "range"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Урок 14. Генератор историй",
+      "slug": "lesson-14",
+      "goal": "Собрать историю из частей.",
+      "theory": "Генератор историй комбинирует списки и случайный выбор:\n\nimport random\nheroes = [\"рыцарь\", \"маг\"]\nplaces = [\"лес\", \"замок\"]\nh = random.choice(heroes)\np = random.choice(places)\nprint(f\"В {p} появился {h}\")\n\nЧем больше списков — тем разнообразнее истории.",
+      "simple_explanation": "Берёшь случайное слово из каждого списка и склеиваешь в предложение. Каждый запуск — новая история. Как конструктор сказок.",
+      "practice": "1. Создай 3 списка: герой, место, действие.\n2. Собери одно предложение через random.choice.\n3. Сделай генератор из задания story_generator.\n4. Добавь f-строку для красивого вывода.",
+      "mini_project": "Генератор квестов: название, награда и враг — три случайных части в одном абзаце.",
+      "summary": "{ student_name }, ты создал программу, которая сама придумывает текст. Это творческое программирование!",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "hero = input()\nplace = input()\nprint(f\"{hero} пошёл в {place}\")\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 3,
+          "sort_order": 1,
+          "checker_config_json": {},
+          "visible_tests_json": [
+            {
+              "stdin": "рыцарь\nлес",
+              "expected_stdout": "рыцарь пошёл в лес"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "маг\nзамок",
+              "expected_stdout": "маг пошёл в замок",
+              "hidden": true
+            }
+          ],
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 14",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "project",
+          "starter_code": "hero = input()\nplace = input()\n# Выведи: {hero} пошёл в {place}\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 5,
+          "sort_order": 2,
+          "slug": "story_generator",
+          "checker_config_json": {},
+          "visible_tests_json": [
+            {
+              "stdin": "Герой\nгород",
+              "expected_stdout": "Герой пошёл в город"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "Волк\nлес",
+              "expected_stdout": "Волк пошёл в лес",
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "Урок 15. Функции def",
+      "slug": "lesson-15",
+      "goal": "Создавать функции.",
+      "theory": "Функция def — именованный кусок кода, который можно вызывать много раз:\n\ndef greet(name):\n    print(f\"Привет, {name}!\")\n\ngreet(\"Гоша\")\ngreet(\"Аня\")\n\ndef объявляет функцию. В скобках — параметры. Тело с отступом.",
+      "simple_explanation": "Функция — рецепт с названием. Написал один раз — вызываешь, когда нужно. Не копируешь один и тот же код десять раз.",
+      "practice": "1. Напиши функцию, которая печатает разделитель из дефисов.\n2. Сделай greet(name) с твоим именем.\n3. Функция attack() — выводит «Удар!».\n4. Сдай задание урока с def.",
+      "mini_project": "Три функции: show_health(hp), show_gold(g), show_level(l) — каждая выводит одну строку статуса.",
+      "summary": "Функции делают код короче и понятнее, { student_name }. Дальше почти всё будет строиться из функций.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "def greet(name):\n    print(f\"Привет, {name}!\")\ngreet(\"{{ student_name }}\")\n",
+          "checker_type": "stdout_regex",
+          "expected_output": ".+",
+          "max_xp": 3,
+          "sort_order": 1,
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 15",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "practice",
+          "starter_code": "def greet(name):\n    # Выведи приветствие\n    pass\n\ngreet(\"{{ student_name }}\")\n",
+          "checker_type": "stdout_exact",
+          "expected_output": "Привет, {{ student_name }}!",
+          "max_xp": 5,
+          "sort_order": 2,
+          "expected_stdout": "Привет, {{ student_name }}!",
+          "checker_config_json": {
+            "required_constructs": [
+              "def"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Урок 16. Параметры и return",
+      "slug": "lesson-16",
+      "goal": "Возвращать результат.",
+      "theory": "return отдаёт результат из функции:\n\ndef add(a, b):\n    return a + b\n\ntotal = add(3, 5)  # total = 8\n\ndef heal(hp, amount):\n    return hp + amount\n\nБез return функция только печатает. С return — считает и возвращает значение.",
+      "simple_explanation": "return — «вот ответ». Функция как калькулятор: дал числа — получил результат в переменную. Так удобно считать урон, лечение и очки.",
+      "practice": "1. Функция double(x) возвращает x * 2.\n2. restore_energy(hp, potion) — верни новое здоровье.\n3. Сдай задание restore_energy_function.\n4. Используй результат return в print.",
+      "mini_project": "Функция total_damage(base, bonus) возвращает сумму; вызови её в цикле из 3 раундов.",
+      "summary": "{ student_name }, return превращает функции в вычислители. Это важный шаг к аккуратным играм.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "def add(a, b):\n    return a + b\nprint(add(2, 3))\n",
+          "checker_type": "stdout_regex",
+          "expected_output": ".+",
+          "max_xp": 3,
+          "sort_order": 1,
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 16",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "project",
+          "starter_code": "def add(a, b):\n    # Верни сумму a и b\n    pass\n\nprint(add(2, 3))\n",
+          "checker_type": "stdout_exact",
+          "expected_output": "5",
+          "max_xp": 5,
+          "sort_order": 2,
+          "slug": "restore_energy_function",
+          "expected_stdout": "5",
+          "checker_config_json": {
+            "required_constructs": [
+              "def",
+              "return"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "title": "Урок 17. Ошибки",
+      "slug": "lesson-17",
+      "goal": "Понимать ошибки.",
+      "theory": "Ошибки в Python — нормальная часть обучения.\nSyntaxError — опечатка, забыли двоеточие или скобку.\nNameError — переменная не объявлена.\nValueError — неверное значение, например int(\"abc\").\n\nЧитай последнюю строку сообщения об ошибке — там подсказка.\nИсправляй по одной ошибке и запускай снова.",
+      "simple_explanation": "Ошибка — не «ты плохой», а «программа не поняла». Смотри на красный текст, найди строку и подумай, что не так. Так учатся все.",
+      "practice": "1. Намеренно убери двоеточие у if — прочитай SyntaxError.\n2. Исправь NameError: объяви переменную до print.\n3. Поймай ValueError при int(\"привет\").\n4. Исправь одну ошибку в примере урока.",
+      "mini_project": "Найди и исправь 3 ошибки в «сломанном» коде (преподаватель или друг дал файл).",
+      "summary": "Умение читать ошибки — суперсила программиста, { student_name }. Не бойся красного текста в консоли.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "try:\n    print(int(\"abc\"))\nexcept ValueError:\n    print(\"ошибка\")\n",
+          "checker_type": "stdout_regex",
+          "expected_output": ".+",
+          "max_xp": 3,
+          "sort_order": 1,
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 17",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "practice",
+          "starter_code": "try:\n    print(int(\"abc\"))\nexcept ValueError:\n    # Выведи слово ошибка\n    pass\n",
+          "checker_type": "stdout_exact",
+          "expected_output": "ошибка",
+          "max_xp": 5,
+          "sort_order": 2,
+          "expected_stdout": "ошибка",
+          "checker_config_json": {
+            "required_constructs": [
+              "try",
+              "except"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Урок 18. Комментарии и аккуратный код",
+      "slug": "lesson-18",
+      "goal": "Писать читаемый код.",
+      "theory": "Комментарий — строка для человека, Python её игнорирует:\n\n# Это комментарий\nhp = 100  # текущее здоровье\n\nХороший код:\n— понятные имена переменных\n— отступы 4 пробела\n— короткие функции\n— комментарии к сложным местам",
+      "simple_explanation": "Комментарии — заметки себе в будущем. Аккуратный код легче читать тебе и учителю. Как аккуратная тетрадь вместо каракуль.",
+      "practice": "1. Добавь комментарии к каждой переменной в примере.\n2. Переименуй x и y в осмысленные имена.\n3. Разбей длинный код на 2 функции.\n4. Отформатируй задание урока.",
+      "mini_project": "Возьми код из прошлого урока, добавь 5 комментариев и улучши имена переменных.",
+      "summary": "{ student_name }, чистый код — признак хорошего программиста. Комментарии и имена экономят время при исправлениях.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "# приветствие\nname = \"{{ student_name }}\"\nprint(name)\n",
+          "checker_type": "stdout_regex",
+          "expected_output": ".+",
+          "max_xp": 3,
+          "sort_order": 1,
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 18",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "practice",
+          "starter_code": "# приветствие\nname = \"{{ student_name }}\"\n# Выведи name\n",
+          "checker_type": "stdout_exact",
+          "expected_output": "{{ student_name }}",
+          "max_xp": 5,
+          "sort_order": 2,
+          "expected_stdout": "{{ student_name }}",
+          "checker_config_json": {}
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "title": "Урок 19. Один раунд испытания",
+      "slug": "lesson-19",
+      "goal": "Сделать один раунд игры.",
+      "theory": "«Испытание» — один раунд мини-игры: ввод, проверка, результат.\nОбъединяем функции, if и random:\n\ndef challenge_round():\n    target = random.randint(1, 5)\n    guess = int(input(\"Число 1-5: \"))\n    if guess == target:\n        print(\"Победа!\")\n    else:\n        print(\"Мимо\")\n\nchallenge_round()",
+      "simple_explanation": "Один раунд — одна попытка пройти тест. Спросили, проверили, сказали результат. Как один бой с монстром.",
+      "practice": "1. Реализуй challenge_round по шаблону.\n2. Добавь сообщение с правильным ответом при проигрыше.\n3. Сдай задание challenge_round.\n4. Оберни логику в отдельную функцию check_guess.",
+      "mini_project": "Испытание на реакцию: случайная математика «3 + 4» — пользователь вводит ответ.",
+      "summary": "Ты собрал раунд игры из функций и условий, { student_name }. Следующий шаг — повторять раунды в цикле.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "score = 0\nanswer = input(\"2+2=? \")\nif answer == \"4\":\n    score += 1\nprint(score)\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 3,
+          "sort_order": 1,
+          "checker_config_json": {},
+          "visible_tests_json": [
+            {
+              "stdin": "4",
+              "expected_stdout": "1"
+            },
+            {
+              "stdin": "5",
+              "expected_stdout": "0"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "4",
+              "expected_stdout": "1",
+              "hidden": true
+            }
+          ],
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 19",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "challenge",
+          "starter_code": "score = 0\nanswer = input(\"2+2=? \")\n# Если ответ 4 — увеличь score, затем выведи score\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 5,
+          "sort_order": 2,
+          "slug": "challenge_round",
+          "checker_config_json": {
+            "required_constructs": [
+              "if"
+            ]
+          },
+          "visible_tests_json": [
+            {
+              "stdin": "4",
+              "expected_stdout": "1"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "3",
+              "expected_stdout": "0",
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "title": "Урок 20. Испытание в цикле",
+      "slug": "lesson-20",
+      "goal": "Несколько раундов.",
+      "theory": "Несколько раундов — цикл while или for с счётчиком побед:\n\nwins = 0\nfor round_num in range(3):\n    print(\"Раунд\", round_num + 1)\n    # логика испытания\n    wins += 1  # если победа\nprint(\"Побед:\", wins)\n\nМожно остановить игру при поражении через break.",
+      "simple_explanation": "Вместо одного боя — серия из трёх. Считаем победы. Так появляются турниры и уровни с несколькими врагами.",
+      "practice": "1. Сделай 3 раунда challenge в цикле for.\n2. Считай победы в переменной wins.\n3. Сдай challenge_loop.\n4. Выведи итог: «Ты победил в N из 3».",
+      "mini_project": "Турнир: 5 раундов, в конце звание «Новичок» / «Боец» / «Чемпион» по числу побед.",
+      "summary": "{ student_name }, цикл + функция = полноценный игровой режим. Ты уже пишешь настоящие мини-игры.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "score = 0\nfor _ in range(3):\n    if input() == \"да\":\n        score += 1\nprint(score)\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 3,
+          "sort_order": 1,
+          "checker_config_json": {},
+          "visible_tests_json": [
+            {
+              "stdin": "да\nнет\nда",
+              "expected_stdout": "2"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "нет\nнет\nнет",
+              "expected_stdout": "0",
+              "hidden": true
+            }
+          ],
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 20",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "challenge",
+          "starter_code": "score = 0\nfor _ in range(3):\n    # Считай ответы \"да\"\n    pass\nprint(score)\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 5,
+          "sort_order": 2,
+          "slug": "challenge_loop",
+          "checker_config_json": {
+            "required_constructs": [
+              "for"
+            ]
+          },
+          "visible_tests_json": [
+            {
+              "stdin": "да\nда\nда",
+              "expected_stdout": "3"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "да\nнет\nда",
+              "expected_stdout": "2",
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "title": "Урок 21. Меню",
+      "slug": "lesson-21",
+      "goal": "Сделать меню выбора.",
+      "theory": "Меню — цикл while с выбором действия:\n\nwhile True:\n    print(\"1. Играть  2. Инвентарь  0. Выход\")\n    choice = input(\"Выбор: \")\n    if choice == \"0\":\n        break\n    elif choice == \"1\":\n        play()\n    ...\n\nКаждый пункт — вызов своей функции.",
+      "simple_explanation": "Меню — главный экран игры. Показываешь варианты, ждёшь цифру, делаешь действие. Цикл крутится, пока игрок не выберет «выход».",
+      "practice": "1. Сделай меню из 3 пунктов + выход.\n2. Каждый пункт вызывает print с разным текстом.\n3. Сдай menu_basic.\n4. Добавь «неверный выбор» в else.",
+      "mini_project": "Меню героя: статус, тренировка (случайный урон), отдых (+HP) — всё через функции.",
+      "summary": "Меню связывает части игры воедино, { student_name }. Почти каждая текстовая игра строится вокруг меню.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "choice = input(\"1-старт 2-выход: \")\nif choice == \"1\":\n    print(\"старт\")\nelse:\n    print(\"выход\")\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 3,
+          "sort_order": 1,
+          "checker_config_json": {},
+          "visible_tests_json": [
+            {
+              "stdin": "1",
+              "expected_stdout": "старт"
+            },
+            {
+              "stdin": "2",
+              "expected_stdout": "выход"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "1",
+              "expected_stdout": "старт",
+              "hidden": true
+            }
+          ],
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 21",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "project",
+          "starter_code": "choice = input(\"1-старт 2-выход: \")\n# Если 1 — старт, иначе — выход\n",
+          "checker_type": "stdin_stdout",
+          "max_xp": 5,
+          "sort_order": 2,
+          "slug": "menu_basic",
+          "checker_config_json": {
+            "required_constructs": [
+              "if"
+            ]
+          },
+          "visible_tests_json": [
+            {
+              "stdin": "1",
+              "expected_stdout": "старт"
+            },
+            {
+              "stdin": "2",
+              "expected_stdout": "выход"
+            }
+          ],
+          "hidden_tests_json": [
+            {
+              "stdin": "2",
+              "expected_stdout": "выход",
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "title": "Урок 22. Магазин",
+      "slug": "lesson-22",
+      "goal": "Покупки в игре.",
+      "theory": "Магазин: список товаров, цены, золото игрока:\n\nshop = [\"зелье\", \"меч\"]\nprices = [10, 50]\ngold = 100\nchoice = int(input(\"Номер товара: \")) - 1\nif gold >= prices[choice]:\n    gold -= prices[choice]\n    print(\"Куплено:\", shop[choice])\n\nПроверяй индекс и достаточно ли золота.",
+      "simple_explanation": "В магазине показываешь список, игрок выбирает номер, ты проверяешь деньги и отнимаешь цену. Как в настоящих RPG.",
+      "practice": "1. Выведи товары с номерами и ценами.\n2. Реализуй покупку одного товара.\n3. Сдай shop_basic.\n4. Покажи остаток золота после покупки.",
+      "mini_project": "Магазин в цикле: покупай несколько раз, пока не выберешь «0 — выход».",
+      "summary": "{ student_name }, магазин — списки + условия + переменные. Экономика делает игру глубже.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "coins = 10\nprice = 3\nif coins >= price:\n    coins -= price\nprint(coins)\n",
+          "checker_type": "stdout_regex",
+          "expected_output": ".+",
+          "max_xp": 3,
+          "sort_order": 1,
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 22",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "project",
+          "starter_code": "coins = 10\nprice = 3\n# Если хватает монет — купи (вычти price) и выведи остаток\n",
+          "checker_type": "stdout_exact",
+          "expected_output": "7",
+          "max_xp": 5,
+          "sort_order": 2,
+          "slug": "shop_basic",
+          "expected_stdout": "7",
+          "checker_config_json": {
+            "required_constructs": [
+              "if"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "title": "Урок 23. Финальная текстовая игра",
+      "slug": "lesson-23",
+      "goal": "Собрать финальный проект.",
+      "theory": "Финальная игра объединяет всё: меню, переменные, списки, функции, циклы, random.\nСтруктура проекта:\n— главное меню (while)\n— функции: status(), battle(), shop()\n— состояние: hp, gold, inventory (список)\n— победа/поражение с if\n\nПиши по частям: сначала меню, потом одна функция, потом связь.",
+      "simple_explanation": "Это твой главный проект курса — текстовая игра целиком. Не пиши всё сразу: собирай как конструктор LEGO по кусочкам.",
+      "practice": "1. Скелет: меню + переменные hp, gold.\n2. Добавь функцию боя со случайным уроном.\n3. Добавь инвентарь-список.\n4. Сдай final_game — рабочий прототип.",
+      "mini_project": "Добавь сюжет: 2–3 экрана с выбором (if), ведущие к разным концовкам.",
+      "summary": "Поздравляю, { student_name }! Ты создал финальную текстовую игру — это большой результат всего курса Python.",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "print(\"Финальная игра {{ student_name }}\")\n",
+          "checker_type": "stdout_regex",
+          "expected_output": ".+",
+          "max_xp": 3,
+          "sort_order": 1,
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 23",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "project",
+          "starter_code": "# Выведи: Финальная игра {{ student_name }}\n",
+          "checker_type": "stdout_exact",
+          "expected_output": "Финальная игра {{ student_name }}",
+          "max_xp": 5,
+          "sort_order": 2,
+          "slug": "final_game",
+          "expected_stdout": "Финальная игра {{ student_name }}",
+          "checker_config_json": {}
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "title": "Урок 24. Улучшение проекта",
+      "slug": "lesson-24",
+      "goal": "Улучшить финальный проект.",
+      "theory": "Улучшение проекта — не новая тема, а доводка:\n— вынеси повторяющийся код в функции\n— добавь проверку ввода (пустая строка, неверный номер)\n— улучши тексты для игрока\n— добавь баланс (урон, цены)\n— пройди игру сам и исправь баги\n\nХороший программист не только пишет, но и улучшает.",
+      "simple_explanation": "Первая версия игры — черновик. Сейчас ты делаешь её удобнее и интереснее: меньше багов, больше фич, приятнее играть.",
+      "practice": "1. Найди 2 места с одинаковым кодом — сделай функцию.\n2. Добавь обработку неверного ввода в меню.\n3. Улучши финальный проект из урока 23.\n4. Попроси друга сыграть и запиши, что непонятно.",
+      "mini_project": "Три улучшения на выбор: звуковые эмодзи в тексте, таблица рекордов (переменная best_score), новый враг в бою.",
+      "summary": "{ student_name }, курс Python завершён! Ты умеешь писать программы, игры и улучшать свой код. Дальше — практика и новые проекты. Молодец!",
+      "max_xp": 10,
+      "status": "published",
+      "tasks": [
+        {
+          "title": "Запусти пример",
+          "description": "Запусти стартовый код и посмотри результат.",
+          "type": "practice",
+          "starter_code": "print(\"Проект улучшен!\")\n",
+          "checker_type": "stdout_regex",
+          "expected_output": ".+",
+          "max_xp": 3,
+          "sort_order": 1,
+          "is_required": false
+        },
+        {
+          "title": "Задание урока 24",
+          "description": "Напиши программу по условию урока. Используй своё имя из профиля.",
+          "type": "practice",
+          "starter_code": "# Выведи: Проект улучшен!\n",
+          "checker_type": "stdout_exact",
+          "expected_output": "Проект улучшен!",
+          "max_xp": 5,
+          "sort_order": 2,
+          "expected_stdout": "Проект улучшен!"
+        }
+      ]
+    }
+  ]
+}

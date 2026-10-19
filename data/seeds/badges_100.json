@@ -1,0 +1,1156 @@
+[
+  {
+    "title": "Первый вывод",
+    "icon": "🖨️",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "successful_task",
+    "condition_value": 1,
+    "condition_params": {
+      "task_slug": "print_hello"
+    },
+    "description": "Получи бейдж «Первый вывод»",
+    "is_active": true
+  },
+  {
+    "title": "Мастер текста",
+    "icon": "🔤",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "string_tasks_completed",
+    "condition_value": 3,
+    "condition_params": {},
+    "description": "Получи бейдж «Мастер текста»",
+    "is_active": true
+  },
+  {
+    "title": "Хранитель переменных",
+    "icon": "📦",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "variables_used",
+    "condition_value": 5,
+    "condition_params": {},
+    "description": "Получи бейдж «Хранитель переменных»",
+    "is_active": true
+  },
+  {
+    "title": "Первый расчёт",
+    "icon": "🧮",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "arithmetic_tasks_completed",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Первый расчёт»",
+    "is_active": true
+  },
+  {
+    "title": "Игровой профиль",
+    "icon": "🎮",
+    "level": "bronze",
+    "badge_type": "project",
+    "condition_key": "project_completed",
+    "condition_value": 1,
+    "condition_params": {
+      "project_slug": "game_profile"
+    },
+    "description": "Получи бейдж «Игровой профиль»",
+    "is_active": true
+  },
+  {
+    "title": "Первый запуск кода",
+    "icon": "🧑‍💻",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "code_runs_success",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Первый запуск кода»",
+    "is_active": true
+  },
+  {
+    "title": "10 запусков",
+    "icon": "🚀",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "code_runs_success",
+    "condition_value": 10,
+    "condition_params": {},
+    "description": "Получи бейдж «10 запусков»",
+    "is_active": true
+  },
+  {
+    "title": "50 запусков",
+    "icon": "⚡",
+    "level": "silver",
+    "badge_type": "achievement",
+    "condition_key": "code_runs_success",
+    "condition_value": 50,
+    "condition_params": {},
+    "description": "Получи бейдж «50 запусков»",
+    "is_active": true
+  },
+  {
+    "title": "100 запусков",
+    "icon": "🔥",
+    "level": "gold",
+    "badge_type": "achievement",
+    "condition_key": "code_runs_success",
+    "condition_value": 100,
+    "condition_params": {},
+    "description": "Получи бейдж «100 запусков»",
+    "is_active": true
+  },
+  {
+    "title": "Я понял print",
+    "icon": "🧠",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "lesson_skill_completed",
+    "condition_value": 1,
+    "condition_params": {
+      "skill": "print"
+    },
+    "description": "Получи бейдж «Я понял print»",
+    "is_active": true
+  },
+  {
+    "title": "Аккуратный код",
+    "icon": "📝",
+    "level": "bronze",
+    "badge_type": "style",
+    "condition_key": "clean_code_score",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Аккуратный код»",
+    "is_active": true
+  },
+  {
+    "title": "Чистый файл",
+    "icon": "🧹",
+    "level": "silver",
+    "badge_type": "style",
+    "condition_key": "clean_code_score",
+    "condition_value": 5,
+    "condition_params": {},
+    "description": "Получи бейдж «Чистый файл»",
+    "is_active": true
+  },
+  {
+    "title": "Строитель программы",
+    "icon": "🧱",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "tasks_completed",
+    "condition_value": 5,
+    "condition_params": {},
+    "description": "Получи бейдж «Строитель программы»",
+    "is_active": true
+  },
+  {
+    "title": "Архитектор кода",
+    "icon": "🏗️",
+    "level": "gold",
+    "badge_type": "achievement",
+    "condition_key": "tasks_completed",
+    "condition_value": 50,
+    "condition_params": {},
+    "description": "Получи бейдж «Архитектор кода»",
+    "is_active": true
+  },
+  {
+    "title": "Любитель задач",
+    "icon": "🧩",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "tasks_completed",
+    "condition_value": 10,
+    "condition_params": {},
+    "description": "Получи бейдж «Любитель задач»",
+    "is_active": true
+  },
+  {
+    "title": "Решатель задач",
+    "icon": "🧩",
+    "level": "silver",
+    "badge_type": "achievement",
+    "condition_key": "tasks_completed",
+    "condition_value": 25,
+    "condition_params": {},
+    "description": "Получи бейдж «Решатель задач»",
+    "is_active": true
+  },
+  {
+    "title": "Мастер задач",
+    "icon": "🧩",
+    "level": "gold",
+    "badge_type": "achievement",
+    "condition_key": "tasks_completed",
+    "condition_value": 75,
+    "condition_params": {},
+    "description": "Получи бейдж «Мастер задач»",
+    "is_active": true
+  },
+  {
+    "title": "Легенда задач",
+    "icon": "👑",
+    "level": "legendary",
+    "badge_type": "achievement",
+    "condition_key": "tasks_completed",
+    "condition_value": 150,
+    "condition_params": {},
+    "description": "Получи бейдж «Легенда задач»",
+    "is_active": true
+  },
+  {
+    "title": "Python-ученик",
+    "icon": "🐍",
+    "level": "bronze",
+    "badge_type": "language",
+    "condition_key": "language_started",
+    "condition_value": 1,
+    "condition_params": {
+      "language": "python"
+    },
+    "description": "Получи бейдж «Python-ученик»",
+    "is_active": true
+  },
+  {
+    "title": "Python-практик",
+    "icon": "🐍",
+    "level": "silver",
+    "badge_type": "language",
+    "condition_key": "language_xp",
+    "condition_value": 250,
+    "condition_params": {
+      "language": "python"
+    },
+    "description": "Получи бейдж «Python-практик»",
+    "is_active": true
+  },
+  {
+    "title": "Python-мастер",
+    "icon": "🐍",
+    "level": "gold",
+    "badge_type": "language",
+    "condition_key": "language_xp",
+    "condition_value": 1000,
+    "condition_params": {
+      "language": "python"
+    },
+    "description": "Получи бейдж «Python-мастер»",
+    "is_active": true
+  },
+  {
+    "title": "Python-чемпион",
+    "icon": "🐍",
+    "level": "platinum",
+    "badge_type": "language",
+    "condition_key": "language_xp",
+    "condition_value": 2500,
+    "condition_params": {
+      "language": "python"
+    },
+    "description": "Получи бейдж «Python-чемпион»",
+    "is_active": true
+  },
+  {
+    "title": "Java-ученик",
+    "icon": "☕",
+    "level": "bronze",
+    "badge_type": "language",
+    "condition_key": "language_started",
+    "condition_value": 1,
+    "condition_params": {
+      "language": "java"
+    },
+    "description": "Получи бейдж «Java-ученик»",
+    "is_active": true
+  },
+  {
+    "title": "Java-компилятор",
+    "icon": "☕",
+    "level": "bronze",
+    "badge_type": "language",
+    "condition_key": "java_compiles_success",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Java-компилятор»",
+    "is_active": true
+  },
+  {
+    "title": "Java-практик",
+    "icon": "☕",
+    "level": "silver",
+    "badge_type": "language",
+    "condition_key": "language_xp",
+    "condition_value": 250,
+    "condition_params": {
+      "language": "java"
+    },
+    "description": "Получи бейдж «Java-практик»",
+    "is_active": true
+  },
+  {
+    "title": "Java-мастер",
+    "icon": "☕",
+    "level": "gold",
+    "badge_type": "language",
+    "condition_key": "language_xp",
+    "condition_value": 1000,
+    "condition_params": {
+      "language": "java"
+    },
+    "description": "Получи бейдж «Java-мастер»",
+    "is_active": true
+  },
+  {
+    "title": "JavaScript-ученик",
+    "icon": "🟨",
+    "level": "bronze",
+    "badge_type": "language",
+    "condition_key": "language_started",
+    "condition_value": 1,
+    "condition_params": {
+      "language": "javascript"
+    },
+    "description": "Получи бейдж «JavaScript-ученик»",
+    "is_active": true
+  },
+  {
+    "title": "Первый console.log",
+    "icon": "🟨",
+    "level": "bronze",
+    "badge_type": "language",
+    "condition_key": "js_console_log_success",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Первый console.log»",
+    "is_active": true
+  },
+  {
+    "title": "JavaScript-практик",
+    "icon": "🟨",
+    "level": "silver",
+    "badge_type": "language",
+    "condition_key": "language_xp",
+    "condition_value": 250,
+    "condition_params": {
+      "language": "javascript"
+    },
+    "description": "Получи бейдж «JavaScript-практик»",
+    "is_active": true
+  },
+  {
+    "title": "JavaScript-мастер",
+    "icon": "🟨",
+    "level": "gold",
+    "badge_type": "language",
+    "condition_key": "language_xp",
+    "condition_value": 1000,
+    "condition_params": {
+      "language": "javascript"
+    },
+    "description": "Получи бейдж «JavaScript-мастер»",
+    "is_active": true
+  },
+  {
+    "title": "Первый input",
+    "icon": "❓",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "input_tasks_completed",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Первый input»",
+    "is_active": true
+  },
+  {
+    "title": "Собеседник программы",
+    "icon": "🎙️",
+    "level": "silver",
+    "badge_type": "achievement",
+    "condition_key": "input_tasks_completed",
+    "condition_value": 5,
+    "condition_params": {},
+    "description": "Получи бейдж «Собеседник программы»",
+    "is_active": true
+  },
+  {
+    "title": "Повелитель чисел",
+    "icon": "🔢",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "numbers_tasks_completed",
+    "condition_value": 3,
+    "condition_params": {},
+    "description": "Получи бейдж «Повелитель чисел»",
+    "is_active": true
+  },
+  {
+    "title": "Мастер сложения",
+    "icon": "➕",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "arithmetic_operator_used",
+    "condition_value": 1,
+    "condition_params": {
+      "operator": "+"
+    },
+    "description": "Получи бейдж «Мастер сложения»",
+    "is_active": true
+  },
+  {
+    "title": "Мастер умножения",
+    "icon": "✖️",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "arithmetic_operator_used",
+    "condition_value": 1,
+    "condition_params": {
+      "operator": "*"
+    },
+    "description": "Получи бейдж «Мастер умножения»",
+    "is_active": true
+  },
+  {
+    "title": "Калькулятор очков",
+    "icon": "🧮",
+    "level": "silver",
+    "badge_type": "project",
+    "condition_key": "project_completed",
+    "condition_value": 1,
+    "condition_params": {
+      "project_slug": "points_calculator"
+    },
+    "description": "Получи бейдж «Калькулятор очков»",
+    "is_active": true
+  },
+  {
+    "title": "Открыватель дверей",
+    "icon": "🚪",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "if_else_tasks_completed",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Открыватель дверей»",
+    "is_active": true
+  },
+  {
+    "title": "Мастер условий",
+    "icon": "🧭",
+    "level": "silver",
+    "badge_type": "achievement",
+    "condition_key": "if_else_tasks_completed",
+    "condition_value": 5,
+    "condition_params": {},
+    "description": "Получи бейдж «Мастер условий»",
+    "is_active": true
+  },
+  {
+    "title": "Судья условий",
+    "icon": "⚖️",
+    "level": "gold",
+    "badge_type": "achievement",
+    "condition_key": "conditional_tasks_completed",
+    "condition_value": 15,
+    "condition_params": {},
+    "description": "Получи бейдж «Судья условий»",
+    "is_active": true
+  },
+  {
+    "title": "Развилка выбора",
+    "icon": "🛤️",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "elif_used",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Развилка выбора»",
+    "is_active": true
+  },
+  {
+    "title": "Команда AND",
+    "icon": "🔗",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "logical_and_used",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Команда AND»",
+    "is_active": true
+  },
+  {
+    "title": "Команда OR",
+    "icon": "🔀",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "logical_or_used",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Команда OR»",
+    "is_active": true
+  },
+  {
+    "title": "Первый random",
+    "icon": "🎲",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "random_used",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Первый random»",
+    "is_active": true
+  },
+  {
+    "title": "Генератор случайности",
+    "icon": "🎰",
+    "level": "silver",
+    "badge_type": "achievement",
+    "condition_key": "random_tasks_completed",
+    "condition_value": 5,
+    "condition_params": {},
+    "description": "Получи бейдж «Генератор случайности»",
+    "is_active": true
+  },
+  {
+    "title": "Удачный бросок",
+    "icon": "🍀",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "random_max_roll_hit",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Удачный бросок»",
+    "is_active": true
+  },
+  {
+    "title": "Первый цикл while",
+    "icon": "🔁",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "while_used",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Первый цикл while»",
+    "is_active": true
+  },
+  {
+    "title": "Повелитель while",
+    "icon": "🌀",
+    "level": "silver",
+    "badge_type": "achievement",
+    "condition_key": "while_tasks_completed",
+    "condition_value": 5,
+    "condition_params": {},
+    "description": "Получи бейдж «Повелитель while»",
+    "is_active": true
+  },
+  {
+    "title": "Победитель бесконечного цикла",
+    "icon": "♾️",
+    "level": "silver",
+    "badge_type": "debug",
+    "condition_key": "infinite_loop_fixed",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Победитель бесконечного цикла»",
+    "is_active": true
+  },
+  {
+    "title": "Мастер break",
+    "icon": "🛑",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "break_used",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Мастер break»",
+    "is_active": true
+  },
+  {
+    "title": "Угадай число",
+    "icon": "🎯",
+    "level": "bronze",
+    "badge_type": "project",
+    "condition_key": "project_completed",
+    "condition_value": 1,
+    "condition_params": {
+      "project_slug": "guess_number_basic"
+    },
+    "description": "Получи бейдж «Угадай число»",
+    "is_active": true
+  },
+  {
+    "title": "Меткий угадыватель",
+    "icon": "🏹",
+    "level": "silver",
+    "badge_type": "project",
+    "condition_key": "guess_number_won",
+    "condition_value": 3,
+    "condition_params": {},
+    "description": "Получи бейдж «Меткий угадыватель»",
+    "is_active": true
+  },
+  {
+    "title": "Умная подсказка",
+    "icon": "🧠",
+    "level": "silver",
+    "badge_type": "project",
+    "condition_key": "added_hint_logic",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Умная подсказка»",
+    "is_active": true
+  },
+  {
+    "title": "Первый список",
+    "icon": "🎒",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "list_created",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Первый список»",
+    "is_active": true
+  },
+  {
+    "title": "Рюкзак героя",
+    "icon": "🎒",
+    "level": "bronze",
+    "badge_type": "project",
+    "condition_key": "project_completed",
+    "condition_value": 1,
+    "condition_params": {
+      "project_slug": "backpack_basic"
+    },
+    "description": "Получи бейдж «Рюкзак героя»",
+    "is_active": true
+  },
+  {
+    "title": "Добавил предмет",
+    "icon": "📥",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "append_used",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Добавил предмет»",
+    "is_active": true
+  },
+  {
+    "title": "Использовал предмет",
+    "icon": "📤",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "remove_used",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Использовал предмет»",
+    "is_active": true
+  },
+  {
+    "title": "Проверил наличие",
+    "icon": "🔍",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "in_operator_used",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Проверил наличие»",
+    "is_active": true
+  },
+  {
+    "title": "Коллекционер предметов",
+    "icon": "🧺",
+    "level": "silver",
+    "badge_type": "achievement",
+    "condition_key": "list_items_total",
+    "condition_value": 25,
+    "condition_params": {},
+    "description": "Получи бейдж «Коллекционер предметов»",
+    "is_active": true
+  },
+  {
+    "title": "Первый for",
+    "icon": "🔂",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "for_used",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Первый for»",
+    "is_active": true
+  },
+  {
+    "title": "Переборщик списков",
+    "icon": "📜",
+    "level": "silver",
+    "badge_type": "achievement",
+    "condition_key": "for_tasks_completed",
+    "condition_value": 5,
+    "condition_params": {},
+    "description": "Получи бейдж «Переборщик списков»",
+    "is_active": true
+  },
+  {
+    "title": "Энциклопедия монстров",
+    "icon": "📚",
+    "level": "silver",
+    "badge_type": "project",
+    "condition_key": "project_completed",
+    "condition_value": 1,
+    "condition_params": {
+      "project_slug": "monster_catalog"
+    },
+    "description": "Получи бейдж «Энциклопедия монстров»",
+    "is_active": true
+  },
+  {
+    "title": "Генератор историй",
+    "icon": "🧙",
+    "level": "silver",
+    "badge_type": "project",
+    "condition_key": "project_completed",
+    "condition_value": 1,
+    "condition_params": {
+      "project_slug": "story_generator"
+    },
+    "description": "Получи бейдж «Генератор историй»",
+    "is_active": true
+  },
+  {
+    "title": "Экспериментатор",
+    "icon": "🧪",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "custom_changes_added",
+    "condition_value": 5,
+    "condition_params": {},
+    "description": "Получи бейдж «Экспериментатор»",
+    "is_active": true
+  },
+  {
+    "title": "Великий экспериментатор",
+    "icon": "🧪",
+    "level": "gold",
+    "badge_type": "achievement",
+    "condition_key": "custom_changes_added",
+    "condition_value": 50,
+    "condition_params": {},
+    "description": "Получи бейдж «Великий экспериментатор»",
+    "is_active": true
+  },
+  {
+    "title": "Первая функция",
+    "icon": "🛠️",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "function_created",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Первая функция»",
+    "is_active": true
+  },
+  {
+    "title": "Набор функций",
+    "icon": "🧰",
+    "level": "silver",
+    "badge_type": "achievement",
+    "condition_key": "functions_created",
+    "condition_value": 5,
+    "condition_params": {},
+    "description": "Получи бейдж «Набор функций»",
+    "is_active": true
+  },
+  {
+    "title": "Фабрика команд",
+    "icon": "🏭",
+    "level": "gold",
+    "badge_type": "achievement",
+    "condition_key": "functions_created",
+    "condition_value": 15,
+    "condition_params": {},
+    "description": "Получи бейдж «Фабрика команд»",
+    "is_active": true
+  },
+  {
+    "title": "Параметры функции",
+    "icon": "📦",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "function_parameters_used",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Параметры функции»",
+    "is_active": true
+  },
+  {
+    "title": "Первый return",
+    "icon": "↩️",
+    "level": "bronze",
+    "badge_type": "achievement",
+    "condition_key": "return_used",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Первый return»",
+    "is_active": true
+  },
+  {
+    "title": "Восстановление энергии",
+    "icon": "🔋",
+    "level": "silver",
+    "badge_type": "project",
+    "condition_key": "project_completed",
+    "condition_value": 1,
+    "condition_params": {
+      "project_slug": "restore_energy_function"
+    },
+    "description": "Получи бейдж «Восстановление энергии»",
+    "is_active": true
+  },
+  {
+    "title": "Первая найденная ошибка",
+    "icon": "🐞",
+    "level": "bronze",
+    "badge_type": "debug",
+    "condition_key": "bug_fixed",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Первая найденная ошибка»",
+    "is_active": true
+  },
+  {
+    "title": "Охотник за ошибками",
+    "icon": "🐛",
+    "level": "silver",
+    "badge_type": "debug",
+    "condition_key": "bug_fixed",
+    "condition_value": 10,
+    "condition_params": {},
+    "description": "Получи бейдж «Охотник за ошибками»",
+    "is_active": true
+  },
+  {
+    "title": "Спасатель программы",
+    "icon": "🧯",
+    "level": "gold",
+    "badge_type": "debug",
+    "condition_key": "bug_fixed",
+    "condition_value": 25,
+    "condition_params": {},
+    "description": "Получи бейдж «Спасатель программы»",
+    "is_active": true
+  },
+  {
+    "title": "Детектив ошибок",
+    "icon": "🕵️",
+    "level": "platinum",
+    "badge_type": "debug",
+    "condition_key": "bug_fixed",
+    "condition_value": 50,
+    "condition_params": {},
+    "description": "Получи бейдж «Детектив ошибок»",
+    "is_active": true
+  },
+  {
+    "title": "Исправил SyntaxError",
+    "icon": "🧷",
+    "level": "bronze",
+    "badge_type": "debug",
+    "condition_key": "syntax_error_fixed",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Исправил SyntaxError»",
+    "is_active": true
+  },
+  {
+    "title": "Исправил NameError",
+    "icon": "🧷",
+    "level": "bronze",
+    "badge_type": "debug",
+    "condition_key": "name_error_fixed",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Исправил NameError»",
+    "is_active": true
+  },
+  {
+    "title": "Исправил IndentationError",
+    "icon": "🧷",
+    "level": "bronze",
+    "badge_type": "debug",
+    "condition_key": "indentation_error_fixed",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Исправил IndentationError»",
+    "is_active": true
+  },
+  {
+    "title": "Первый комментарий",
+    "icon": "💬",
+    "level": "bronze",
+    "badge_type": "style",
+    "condition_key": "comment_added",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Первый комментарий»",
+    "is_active": true
+  },
+  {
+    "title": "Код с пояснениями",
+    "icon": "🧾",
+    "level": "silver",
+    "badge_type": "style",
+    "condition_key": "comments_added",
+    "condition_value": 10,
+    "condition_params": {},
+    "description": "Получи бейдж «Код с пояснениями»",
+    "is_active": true
+  },
+  {
+    "title": "Аккуратный разработчик",
+    "icon": "🧼",
+    "level": "gold",
+    "badge_type": "style",
+    "condition_key": "clean_code_score",
+    "condition_value": 20,
+    "condition_params": {},
+    "description": "Получи бейдж «Аккуратный разработчик»",
+    "is_active": true
+  },
+  {
+    "title": "Первый бой",
+    "icon": "⚔️",
+    "level": "bronze",
+    "badge_type": "project",
+    "condition_key": "project_completed",
+    "condition_value": 1,
+    "condition_params": {
+      "project_slug": "challenge_round"
+    },
+    "description": "Получи бейдж «Первый бой»",
+    "is_active": true
+  },
+  {
+    "title": "Испытание в цикле",
+    "icon": "🛡️",
+    "level": "silver",
+    "badge_type": "project",
+    "condition_key": "project_completed",
+    "condition_value": 1,
+    "condition_params": {
+      "project_slug": "challenge_loop"
+    },
+    "description": "Получи бейдж «Испытание в цикле»",
+    "is_active": true
+  },
+  {
+    "title": "Случайное испытание",
+    "icon": "🗺️",
+    "level": "silver",
+    "badge_type": "project",
+    "condition_key": "project_completed",
+    "condition_value": 1,
+    "condition_params": {
+      "project_slug": "random_challenge"
+    },
+    "description": "Получи бейдж «Случайное испытание»",
+    "is_active": true
+  },
+  {
+    "title": "Победитель препятствий",
+    "icon": "🧟",
+    "level": "gold",
+    "badge_type": "project",
+    "condition_key": "challenges_won",
+    "condition_value": 10,
+    "condition_params": {},
+    "description": "Получи бейдж «Победитель препятствий»",
+    "is_active": true
+  },
+  {
+    "title": "Первое меню",
+    "icon": "📋",
+    "level": "bronze",
+    "badge_type": "project",
+    "condition_key": "project_completed",
+    "condition_value": 1,
+    "condition_params": {
+      "project_slug": "menu_basic"
+    },
+    "description": "Получи бейдж «Первое меню»",
+    "is_active": true
+  },
+  {
+    "title": "Главное меню",
+    "icon": "🧭",
+    "level": "silver",
+    "badge_type": "project",
+    "condition_key": "project_completed",
+    "condition_value": 1,
+    "condition_params": {
+      "project_slug": "main_menu_loop"
+    },
+    "description": "Получи бейдж «Главное меню»",
+    "is_active": true
+  },
+  {
+    "title": "Первый магазин",
+    "icon": "🛒",
+    "level": "bronze",
+    "badge_type": "project",
+    "condition_key": "project_completed",
+    "condition_value": 1,
+    "condition_params": {
+      "project_slug": "shop_basic"
+    },
+    "description": "Получи бейдж «Первый магазин»",
+    "is_active": true
+  },
+  {
+    "title": "Торговец предметами",
+    "icon": "💰",
+    "level": "silver",
+    "badge_type": "project",
+    "condition_key": "shop_items_created",
+    "condition_value": 5,
+    "condition_params": {},
+    "description": "Получи бейдж «Торговец предметами»",
+    "is_active": true
+  },
+  {
+    "title": "Балансировщик цен",
+    "icon": "💎",
+    "level": "gold",
+    "badge_type": "project",
+    "condition_key": "shop_balance_configured",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Балансировщик цен»",
+    "is_active": true
+  },
+  {
+    "title": "Создатель наград",
+    "icon": "🎁",
+    "level": "silver",
+    "badge_type": "project",
+    "condition_key": "rewards_logic_added",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Создатель наград»",
+    "is_active": true
+  },
+  {
+    "title": "Финальный проект начат",
+    "icon": "🏁",
+    "level": "bronze",
+    "badge_type": "final_project",
+    "condition_key": "final_project_started",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Финальный проект начат»",
+    "is_active": true
+  },
+  {
+    "title": "Первая игра",
+    "icon": "🎮",
+    "level": "gold",
+    "badge_type": "final_project",
+    "condition_key": "final_project_submitted",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Первая игра»",
+    "is_active": true
+  },
+  {
+    "title": "Игра запускается",
+    "icon": "🕹️",
+    "level": "gold",
+    "badge_type": "final_project",
+    "condition_key": "final_project_runs_success",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Игра запускается»",
+    "is_active": true
+  },
+  {
+    "title": "Создатель игры",
+    "icon": "🏆",
+    "level": "platinum",
+    "badge_type": "final_project",
+    "condition_key": "final_project_accepted",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Создатель игры»",
+    "is_active": true
+  },
+  {
+    "title": "Улучшатель проекта",
+    "icon": "🌟",
+    "level": "silver",
+    "badge_type": "final_project",
+    "condition_key": "final_project_improvements",
+    "condition_value": 2,
+    "condition_params": {},
+    "description": "Получи бейдж «Улучшатель проекта»",
+    "is_active": true
+  },
+  {
+    "title": "Большое обновление игры",
+    "icon": "🚀",
+    "level": "gold",
+    "badge_type": "final_project",
+    "condition_key": "final_project_improvements",
+    "condition_value": 5,
+    "condition_params": {},
+    "description": "Получи бейдж «Большое обновление игры»",
+    "is_active": true
+  },
+  {
+    "title": "Объяснил код",
+    "icon": "👨‍🏫",
+    "level": "bronze",
+    "badge_type": "soft_skill",
+    "condition_key": "code_explained",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Объяснил код»",
+    "is_active": true
+  },
+  {
+    "title": "Лучшее объяснение",
+    "icon": "🗣️",
+    "level": "silver",
+    "badge_type": "soft_skill",
+    "condition_key": "code_explained",
+    "condition_value": 10,
+    "condition_params": {},
+    "description": "Получи бейдж «Лучшее объяснение»",
+    "is_active": true
+  },
+  {
+    "title": "Помощник",
+    "icon": "🤝",
+    "level": "silver",
+    "badge_type": "social",
+    "condition_key": "helped_user",
+    "condition_value": 1,
+    "condition_params": {},
+    "description": "Получи бейдж «Помощник»",
+    "is_active": true
+  },
+  {
+    "title": "Легенда платформы",
+    "icon": "👑",
+    "level": "legendary",
+    "badge_type": "achievement",
+    "condition_key": "total_xp",
+    "condition_value": 5000,
+    "condition_params": {},
+    "description": "Получи бейдж «Легенда платформы»",
+    "is_active": true
+  }
+]

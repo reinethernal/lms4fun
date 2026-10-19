@@ -1,0 +1,53 @@
+# Secrets & generated credentials
+.env
+.env.*
+!.env.example
+CREDENTIALS.md
+judge0/judge0.env
+
+# Runtime
+logs/
+pids/
+*.pid
+*.log
+
+# Python
+backend/.venv/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+backend/staticfiles/
+
+# User uploads
+backend/media/
+
+# Node / frontend build (rebuilt by scripts/setup-backend.sh)
+frontend/node_modules/
+frontend/dist/
+backend/static/assets/
+backend/static/index.html
+
+# Judge0 / Ruby
+judge0/judge0.zip
+judge0/judge0-src/vendor/bundle/
+judge0/judge0-src/.bundle/
+judge0/judge0-src/log/*
+judge0/judge0-src/tmp/*
+!judge0/judge0-src/log/.keep
+!judge0/judge0-src/tmp/.keep
+judge0/judge0-src/environment
+judge0/judge0-src/srv/
+judge0/judge0-src/coverage/
+judge0/isolate/isolate
+judge0/isolate/*.o
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+.cursor/
